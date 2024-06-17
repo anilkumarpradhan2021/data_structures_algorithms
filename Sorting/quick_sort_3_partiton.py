@@ -1,5 +1,8 @@
 """"
-https://www.simplilearn.com/tutorials/data-structure-tutorial/quick-sort-algorithm#:~:text=Space%20Complexity,stack%20in%20the%20worst%20case.
+Variation	    Time Complexity	    Space Complexity
+Best Case	    O(n log n)	        O(log n)
+Average Case	O(n log n)	        O(log n)
+Worst Case	    O(n^2)	            O(n)
 
 """
 
