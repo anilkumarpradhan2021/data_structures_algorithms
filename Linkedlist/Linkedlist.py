@@ -26,7 +26,7 @@ def print_node(root):
         temp = temp.next
     print()    
 
-def delet_node(root, val):
+def delete_node(root, val):
     if root is None:
         return -1
     else:
@@ -52,7 +52,7 @@ if __name__ == '__main__':
     add_node(root, 30)
     add_node(root, 40)
     print_node(root)
-    root = delet_node(root, 20)
+    root = delete_node(root, 20)
     print_node(root)
-    root = delet_node(root, 10)
+    root = delete_node(root, 10)
     print_node(root)
