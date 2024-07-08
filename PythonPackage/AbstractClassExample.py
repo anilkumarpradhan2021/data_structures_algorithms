@@ -13,6 +13,8 @@ class AbstractClassExample(ABC):
     def abstractMethod1(self):    
         pass
 
+    def concrete_method(self):
+        print("Its a method defined in abstract class")
 class ChildClassUseAbstractClass(AbstractClassExample):
     
     def test1(self):
@@ -26,3 +28,4 @@ if __name__ == '__main__':
     c = ChildClassUseAbstractClass()
     c.test1()
     c.abstractMethod1()
+    c.concrete_method()

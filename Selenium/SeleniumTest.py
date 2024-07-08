@@ -14,6 +14,7 @@ def is_element_visiable(element):
         return False
 
 
+
 # button, text , select , link , check box, drop down , radio, slider 
 # find all element
 # give proper name to them 
