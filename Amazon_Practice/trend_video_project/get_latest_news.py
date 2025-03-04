@@ -110,9 +110,6 @@ def fetch_news_and_download_images_using_rest_api(
     url = "http://newsapi.org/v2/top-headlines?country=us"
     url = "https://newsapi.org/v2/top-headlines?sources=the-hindu&pageSize=10"
     url = "https://newsapi.org/v2/top-headlines?sources=the-times-of-india&pageSize=10"
-    headers = {
-        "Authorization": "Bearer 908a662f92a9493d9c7cd3d90d304046",  # If an API key/token is needed
-    }
     response = requests.get(url, headers=headers)
 
     if response.status_code == 200:
