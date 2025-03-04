@@ -24,9 +24,11 @@ class TestClass2(object):
         print("test func")         
     
     def __repr__(self):
-        return self.__dict__
+        print("I am in repr")
+        return f"TestClass2(x='{self.x}', y={self.y},z='{self.z}')"
     
     def __str__(self):
+        print("I am in str")
         return str(self.__dict__)  
 
     
@@ -35,3 +37,5 @@ class TestClass2(object):
 if __name__ == '__main__':
     t = TestClass2()
     print(t)
+    print("Eval will call repr")
+    print(repr(t))
